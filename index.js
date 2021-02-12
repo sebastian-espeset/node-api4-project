@@ -24,7 +24,7 @@ app.use(express.json())
 
 //use the server and then listen, for science this time.
 app.use('/api/*',(_,res)=>{
-    res.json({data:`hello bubblegum from data.`})
+    res.json({greeting:`hello bubblegum from data.`, poem:`Oh where oh where has my little dog gone?`})
 })
 app.listen(port,()=>{
     console.log(`server listening at port:${port}`)
